@@ -22,6 +22,10 @@ background: #495A64;
 border-radius: 0 0 10px 10px;
 margin-bottom: 15px;
 border-radius: 10px;
+font-size: 1.125rem;
+}
+.contactanos {
+display: none;
 }
 .bienvenida {
 text-align: center;
@@ -134,24 +138,23 @@ font-size: 0.78rem;
 text-decoration: none;
 margin: 0 6px;
 }
-@media (max-width: 767.98px) {
-.superior {
-min-height: 100vh;
+@media (min-width: 768px) and (max-width: 1024px) {
+.cabecera [aria-label="Buscar"] {
+display: none;
 }
-.bienvenida {
-min-height: 200px;
-}
-.contenido {
-grid-template-columns: 1fr;
+.contactanos {
+display: inline-block;
+padding: 6px 14px;
+color: #000;
+background: #fff;
+border-radius: 12px;
+font-size: 0.75rem;
+font-weight: 700;
 }
 .imagenes {
 grid-template-columns: 1fr;
 }
-.imagenes img {
-height: auto;
-}
-.pie-pagina {
-align-items: flex-start;
-gap: 10px;
+.imagenes img:last-child {
+display: none;
 }
 }
